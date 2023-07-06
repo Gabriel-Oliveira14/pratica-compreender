@@ -1,0 +1,68 @@
+.cub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(61, 65, 65);
+    margin: 0px;
+}
+.itens {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    animation: anicub 1.5s ease infinite;
+}
+.itens:nth-child(1){
+    background-color: rgb(19, 214, 248);
+    animation-delay: 120ms;
+}
+.itens:nth-child(2){
+    background-color: rgb(27, 119, 194);
+    animation-delay: 200ms;
+}
+.itens:nth-child(3){
+    background-color:  rgb(17, 47, 197);
+    animation-delay: 350ms;
+}
+.itens:nth-child(4){
+    background-color: rgb(27, 119, 194);
+    animation-delay: 200ms;
+}
+.itens:nth-child(5){
+    background-color:  rgb(17, 47, 197);
+    animation-delay: 350ms;
+}
+.itens:nth-child(6){
+    background-color: rgb(54, 5, 119);
+    animation-delay: 450ms;
+}
+.itens:nth-child(7){
+    background-color: rgb(17, 47, 197);
+    animation-delay: 350ms;
+}
+.itens:nth-child(8){
+    background-color: rgb(54, 5, 119);
+    animation-delay: 450ms;
+}
+.itens:nth-child(9){
+    background-color: rgb(77, 5, 119);
+    animation-delay: 550ms;
+}
+
+@keyframes anicub{
+    0%{
+        background-color: transparent;
+    }
+    20%{
+        opacity: 100%;
+    }
+    60%{
+        background-color: transparent;
+    }
+    100%{
+        opacity: 80%;
+    }
+}

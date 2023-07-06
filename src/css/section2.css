@@ -1,0 +1,70 @@
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(239, 255, 255, 0.238);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+#p1{
+    padding: 0px 10px;
+}
+.corpo-calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 240px;
+    height: 350px;
+    background: linear-gradient(45deg, rgb(20, 22, 22) 10%, rgb(14, 35, 192) 50%, rgb(63, 142, 206), rgb(150, 30, 255) 90%);
+    border: 2px solid white;
+    border-radius: 10px;
+    gap: 5px;
+}
+.teclas-calc{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 5px;
+}
+.btn-funck {
+    min-width: 45px;
+    height: 40px;
+    color: rgba(46, 46, 46, 0.766);
+    font-size: 1.3em;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(242, 0, 255);
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.btn-funck:hover {
+    background-color: rgb(6, 55, 105);
+    color: aliceblue;
+    font-size: 1.4em;
+}
+.btn-operation {
+    min-width: 52px;
+    height: 40px;
+    background-color: rgb(47, 203, 255);
+    color: rgba(46, 46, 46, 0.766);
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 2px solid white;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-operation:hover{
+    background-color: rgb(19, 19, 192);
+
+}
+.btn-equal {
+    background-color: rgb(10, 238, 10);
+    width: 150px;
+}
