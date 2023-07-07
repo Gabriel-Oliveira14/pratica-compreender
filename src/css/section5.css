@@ -1,4 +1,11 @@
+.area-c{
+    position: relative;
+    width: 400px;
+    height: 150px;
+}
 .circulo{
+    position: absolute;
+    left: 0%;
     display: flex;
     justify-content: center;
     font-size: 2em;
@@ -8,8 +15,9 @@
     height: 150px;
     border-radius: 50%;
     border: 2px solid white;
-    box-shadow: 2px 2px 10px white, inset -6px -6px 15px rgb(255, 254, 254), inset 2px 6px 10px whitesmoke , 8px -6px 2px rgba(16, 191, 255, 0.612) , 8px 6px 2px rgb(27, 148, 161),-8px -6px 2px rgb(28, 187, 187);
-    animation: spin 1.3s linear infinite;
+    box-shadow: 2px 2px 10px white, inset -6px -6px 22px rgb(255, 254, 254), inset 2px 6px 22px whitesmoke , 8px -6px 22px rgba(255, 0, 0, 0.612) , 8px 6px 22px rgb(59, 3, 86),-8px -6px 22px rgb(190, 2, 2);
+    animation: spin 1.3s alternate infinite;
+    transition: ease-in;
 }
 .circulo p{
     display: flex;
@@ -18,10 +26,15 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 2px 2px 30px 10px rebeccapurple, inset 0px 0px 20px 10px red,  inset -3px -5px 20px 5px rgb(10, 17, 210);
+    box-shadow: 2px 2px 30px 40px rebeccapurple, inset 0px 0px 20px 10px rgb(255, 255, 255),  inset -3px -5px 20px 23px rgb(0, 0, 0);
 }
 @keyframes spin{
-    to{
+    from{
         transform: rotate(360deg);
+        left: 0px;
     }
+    to{
+        left: 240px;
+    }
+
 }
