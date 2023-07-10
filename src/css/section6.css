@@ -5,9 +5,9 @@
     position: relative;
     width: 200px;
     height: 200px;
-    transform-origin: 60% -20%;
+    transform-origin: 50% 50%;
     transform-style: preserve-3d;
-    animation: rotate 5s infinite linear;
+    animation: rotate 5s infinite ;
 }
 .q-principal:before,.q-principal:after {
     content: "";
@@ -16,10 +16,10 @@
     height: 100%;
 }
 .q-principal:after{
-    transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(180deg) translateZ(50px);
 }
 .q-principal:before{
-    transform: rotateX(0deg) translateZ(50px);
+    transform: rotateX(-180deg) translateZ(50px);
 }
 #q1{
     transform: rotateY(0deg) translatez(50px);
@@ -47,13 +47,17 @@
 }
 .form-3d{
     position: absolute;
+    top: 50px;
+    left: 50px;
     width: 100px;
     height: 100px;
     border: 2px solid white;
+    border: 3px solid red;
+    background-color: transparent !important;
 }  
 @keyframes rotate {
     0% {
-        transform: rotateY(0deg) rotateX(0deg);
+        transform: rotateY(90deg) rotateX(0deg);
     }
     100% {
         transform: rotateY(1turn) rotateX(1turn);

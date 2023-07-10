@@ -17,7 +17,7 @@
     justify-content: space-around;
     background-color: rgb(2, 2, 44);
     transition: ease-in-out 0.3s;
-    transform: translateY(-100%);
+    transform: translateY(-260px);
 }
 .menu-central li{
     display: flex;
